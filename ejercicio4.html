@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var cadena = prompt ("dime una frase")
+            var resultado = ('la frase ' + cadena)
+            if(cadena == cadena.toUpperCase())
+            {
+                resultado = resultado + (' esta entera en mayusculas')
+            }
+            else if(cadena == cadena.toLowerCase())
+            {
+                resultado = resultado + (' esta entera en minusculas')
+            }
+            else
+            {
+                resultado = resultado + (' Es una mezcla, pero en plan bien, como el queso')
+            }
+            document.write(resultado)
+        </script>
+    </body>
+</html>
