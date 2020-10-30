@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var texto = prompt('What is love?')
+        document.write(leeTexto(texto))
+        function leeTexto (texto)
+        {
+            var array= []
+            array = texto.split(" ");
+            var numero_palabras = array.length;
+            var primera_palabra = array[0]
+            var ultima_palabra = array[array.length-1]
+            var resultado = 'Número de palabras: ' + numero_palabras + '<br/>'
+                         + 'Primera palabra: ' + primera_palabra + '<br/>'
+                         + 'Ultima palabra: ' + ultima_palabra + '<br/>'
+                         + 'Colocadas en orden inverso: ' + array.reverse() + '<br/>'
+                         + 'Las palabras ordenadas de la a la z: ' + array.sort() + '<br/>'
+                         + 'Las palabras ordenadas de la z a la a: ' + array.sort().reverse();
+            return resultado;
+        }
+        </script>
+    </body>
+</html>
