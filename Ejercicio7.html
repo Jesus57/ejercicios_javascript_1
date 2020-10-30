@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript paroimpar</title>
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+       /* Escribir el código de una función a la que se pasa como parámetro un número
+        entero y devuelve como resultado una cadena de texto que indica si el número es
+        par o impar. Mostrar por pantalla el resultado devuelto por la función.*/
+            function paroimpar (int)
+            {
+                var res
+                if (int%2==0)
+                {
+                    res = 'par'
+                }
+                else
+                {
+                    res = 'impar'
+                }
+                return res
+            }
+            var int = prompt ('Digame un nusmero entero')
+            document.write ('El número introducido es ' + paroimpar(int))
+        </script>
+    </body>
+</html>
